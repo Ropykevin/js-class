@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //         Assignment 1: Create an Array
+        // Create an array named colors with the following
+        //  elements: 'red', 'green', 'blue'.
+        let colors = ['red', 'green', 'blue']
+        console.log(colors)
+        // Assignment 2: Access and Modify Array Elements
+        // Given the array fruits, access the second element 
+        // and change it to 'pear'.Then, print the modified array.
+        let fruits = ['banana', "apple", "orange"]
+        fruits[1] = 'pear'
+        console.log(fruits)
+        // Assignment 3: Determine the Length of an Array
+        // Given the array numbers, determine its length 
+        // and store it in a variable lengthOfNumbers.
+        // Then, print lengthOfNumbers.
+        let numbers = [10, 20, 30, 40, 50]
+        let lengthOfNumbers = numbers.length
+        console.log(lengthOfNumbers)
+        //   Assignment 4: Use.pop() Method
+        // Given the array languages, use the.pop() method to 
+        // remove the last element from the array.Then, 
+        // print the modified array.
+        let languages = ["html", 'java', 'css', 'js']
+        languages.pop()
+        console.log(languages)
+
+        //         Assignment 3: Combine Arrays
+        // Given two arrays arr1 and arr2, combine 
+        // them into a single array combinedArray using the 
+        // .concat() method.Then, remove the first element from 
+        // combinedArray using the .shift() method.Finally,
+        //  print the modified combinedArr
+        //             ay.
+        let arr1=[1,2,3,4,5,6]
+        let arr2=[7,8,9,10,11]
+
+        let combinedArray=arr1.concat(arr2)
+        combinedArray.shift()
+        console.log(combinedArray)
+        //   Assignment 4: Extract Subarray
+        // Given an array sourceArray, extract a subarray 
+        // extractedArray from index 2 to index 4(end index not 
+        // inclusive) using the .slice() method.Then, modify the 
+        // extractedArray by replacing its elements with 'x', 'y', 
+        // and 'z' using the .splice() method.Finally, print both the
+        //  sourceArray and the modified extractedArray.
+        // let sourceArray=['a','b','c','d']
+        // let extractedArray=sourceArray.slice(2,4)
+        // extractedArray.splice(0,2,'x','y','z')
+        // console.log(extractedArray)
+
+        let m=[10,20,30,40,50]//x,y,z
+        m.splice(0,2,'x','y','z')
+        console.log(m)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
