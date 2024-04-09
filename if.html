@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = prompt("enter number")
+        if (num > 30) {
+            console.log("number greater than 30")
+        }
+        else {
+            console.log("number less than 30")
+        }
+
+
+        //check the temp if is greater or equal than 40 =>extreme temperature
+        // if it is greater or equal to 35 and less 
+        // than 40 high temperature
+        //if the temperature is between 25 and 35 medium temperature 
+        // otherwise low temperature
+        let temp = prompt("enter the temp")
+
+        if (temp >= 40) {
+            console.log("extreme temperature")
+        } else if (temp >= 35 && temp < 40) {
+            console.log("high temperature ")
+
+        }else if  (temp >= 25 && temp < 35) {
+            console.log("medium temperature")
+        }
+        else {
+            console.log("low temperature")
+        }
+
+
+    </script>
+</body>
+
+</html>
