@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="task.js"></script>
+    <script>
+
+        console.log(country_population)
+        //
+        let zero = []
+        let fifty = []
+        let hundred = []
+        for (let i = 0; i < country_population.length; i++) {
+            console.log(country_population[i].population)
+            pop = country_population[i].population
+            if (pop >= 0 && pop <= 50000000) {
+                zero.push(country_population)
+            }
+            else if (pop > 50000000 && pop <= 100000000) {
+                fifty.push(country_population)
+            }
+            else {
+                hundred.push(country_population)
+            }
+        }
+        let pops = {
+
+            }
+        pops['0-50m'] = zero.length
+        pops['50-100m'] = fifty.length
+        pops['>100m'] = hundred.length
+        console.log(pops)
+
+    </script>
+</body>
+
+</html>
