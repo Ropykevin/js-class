@@ -8,34 +8,41 @@
 </head>
 
 <body>
+    <!-- task.js file which contains country_population data -->
     <script src="task.js"></script>
     <script>
+    // displaying the country_population data to the console
+        console.log(country_population); 
 
-        console.log(country_population)
-        //
-        let zero = []
-        let fifty = []
-        let hundred = []
+        // Initializing arrays to store countries based on population ranges
+        let zero = [];
+        let fifty = [];
+        let hundred = [];
+
+        // Looping through each country in country_population data
         for (let i = 0; i < country_population.length; i++) {
-            console.log(country_population[i].population)
-            pop = country_population[i].population
+            // Retrieving population of the current country
+            let pop = country_population[i].population;
+
+            // Categorize countries based on population ranges
             if (pop >= 0 && pop <= 50000000) {
-                zero.push(country_population)
-            }
-            else if (pop > 50000000 && pop <= 100000000) {
-                fifty.push(country_population)
-            }
-            else {
-                hundred.push(country_population)
+                zero.push(country_population[i]); // Adding  to 'zero' array
+            } else if (pop > 50000000 && pop <= 100000000) {
+                fifty.push(country_population[i]); // Adding  to 'fifty' array
+            } else {
+                hundred.push(country_population[i]); // Adding to 'hundred' array
             }
         }
-        let pops = {
 
-            }
-        pops['0-50m'] = zero.length
-        pops['50-100m'] = fifty.length
-        pops['>100m'] = hundred.length
-        console.log(pops)
+        // Creating an object to store counts of countries in each population range
+        let pops = {
+            '0-50m': zero.length,
+            '50-100m': fifty.length,
+            '>100m': hundred.length
+        };
+
+        // displaying the counts of countries in each population range
+        console.log(pops);
 
     </script>
 </body>
