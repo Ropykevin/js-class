@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //create a function that says hello world
+        //parameters are variables inside a function
+        //arguments are exact values passed into a function
+        function hello(name, s_name) {
+            console.log(`hello ${name} ${s_name}`)
+        }
+        let your_name = prompt("enter name")
+        let second_name = prompt("enter second name")
+        hello(your_name, second_name)
+        // area of a triangle
+        function area_triangle(a, b) {
+            let area = 0.5 * a * b
+            console.log(area)
+        }
+        area_triangle(10, 20)
+        area_triangle(30, 50)
+        //create a function that calc the area of a rectangle and square(use parameters)
+        function calc_area_rect(l, w) {
+            let area = l * w
+            console.log(area)
+        }
+
+        let length = prompt("enter the length")
+        let width = prompt("enter the width")
+        //call the function
+        calc_area_rect(length, width)
+
+        function area_square(x, y) {
+            let area = x * y
+            return area
+        }
+        let square_area = area_square(10, 10)
+        console.log(square_area)
+
+        //write a function that checks if a number is odd or even(return )
+
+        function check_number(num) {
+            let result = ""
+            if (num % 2 == 0) {
+                result = "even"
+            } else {
+                result = "odd"
+            }
+            return result
+        }
+
+        let number = prompt("enter number")
+        let check = check_number(number)
+        console.log(check)
+        // write a function that finds the largest number on  
+        // 3 user inputs  assuming all numbers are different
+        //(3)
+
+        function find_number(x, y, z) {
+            if (x > y && x > z) {
+                result = `${x} is the largest`
+            }
+            else if (y > x && y > z) {
+                result = `${y} is the largest`
+            } else {
+                `${z} is the largest`
+            }
+            return result
+        }
+        let num1 = prompt("enter number 1")
+        let num2 = prompt("enter number 2")
+
+        let num3 = prompt("enter number 3")
+
+        let check2=find_number(num1,num2,num3)
+        console.log(check2)
+
+
+
+    </script>
+</body>
+
+</html>
